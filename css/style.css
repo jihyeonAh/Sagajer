@@ -1,0 +1,1067 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    min-width: 1450px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111;
+    font-family: 'SUITE', sans-serif;
+}
+
+/* 
+font-family: 'SUITE', sans-serif;
+font-family: 'TAEBAEKmilkyway';
+ */
+
+
+/*header*/
+#header {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+}
+
+.gnb ul {
+    display: flex;
+    justify-content: center;
+}
+
+.gnb ul li {
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.login ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login ul li {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 15px;
+}
+
+.login ul li a {
+    color: #5a644e;
+}
+
+.search_input {
+    background: #5a644e url(../icon/search.png) no-repeat 95% center;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.search_input::placeholder {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/*main_banner*/
+#main_banner {
+    padding-bottom: 200px;
+}
+
+
+/*post*/
+#post {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 10px;
+    line-height: 100px;
+}
+
+.post_menu ul {
+    display: flex;
+}
+
+.post_menu ul li {
+    padding: 15px 5px 20px 0px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.green a {
+    color: #fff;
+    background-color: #5a644e;
+    border-radius: 15px;
+    padding: 10px 17px;
+}
+
+.brown a {
+    color: #fff;
+    background-color: #e6bd7b;
+    border-radius: 15px;
+    padding: 10px 14px;
+}
+
+.pink a {
+    color: #fff;
+    background-color: #ffb3c8;
+    border-radius: 15px;
+    padding: 10px 14px;
+}
+
+.blue a {
+    color: #fff;
+    background-color: #acbfcd;
+    border-radius: 15px;
+    padding: 10px 14px;
+}
+
+/*post> all_look*/
+.all_look {
+    position: absolute;
+    top: 115px;
+    right: 85px;
+    background: url(../icon/round.png) no-repeat left center;
+    font-weight: 400;
+
+}
+
+.arrow {
+    position: absolute;
+    top: -5px;
+    right: -50px;
+}
+
+.all_look ul:hover .arrow {
+    animation: move1 1s 2;
+    transition-duration: 1s;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.all_look ul {
+    display: flex;
+}
+
+.all_look ul li {
+    padding: 20px 10px;
+}
+
+
+/*post> post_inner*/
+#post_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+.post_inner {
+    width: 287px;
+}
+
+.post_inner p {
+    font-size: 16px;
+    padding: 20px;
+    height: 70px;
+}
+
+.post_inner a img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.post_inner a img {
+    transition-duration: 0.5s;
+}
+
+.post_inner>a {
+    display: block;
+    overflow: hidden;
+    border-radius: 48px;
+    width: 287px;
+}
+
+.name_like {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.name_like h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 19px;
+}
+
+.name {
+    padding-right: 125px;
+}
+
+.name_like a img {
+    padding-left: 3px;
+    transition-duration: 0.5s;
+}
+
+.name_like a img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.post7,
+.post8 {
+    padding-bottom: 100px;
+}
+
+
+/*news*/
+#news_back {
+    max-width: 1820px;
+    margin: 0 auto;
+    background: linear-gradient(-45deg, #ebf0f3, #d2e4f1);
+    border-radius: 50px;
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 99;
+}
+
+#news_back h1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.news {
+    width: 998px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+
+/*news> pink*/
+.pink_gra {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffb3c8+100&0.1+25,1+100 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 236, 241, 0.1) 25%, rgba(255, 179, 200, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 266px;
+    height: 319px;
+    border-radius: 10px;
+}
+
+.news1 {
+    background: url(../image/news1.png) no-repeat;
+    width: 266px;
+    height: 319px;
+    border-radius: 130px 130px 10px 10px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.news1 .text {
+    padding: 0 20px;
+    padding-top: 100px;
+    transition: all 0.5s;
+}
+
+.news3 {
+    background: url(../image/news3.png) no-repeat;
+    width: 266px;
+    height: 319px;
+    border-radius: 130px 130px 10px 10px;
+    overflow: hidden;
+    margin-top: 60px;
+    z-index: 99;
+    position: relative;
+}
+
+.news3 .text {
+    padding: 0 20px;
+    padding-top: 100px;
+    transition: all 0.5s;
+}
+
+.news5 {
+    background: url(../image/news5.png) no-repeat;
+    width: 266px;
+    height: 319px;
+    border-radius: 130px 130px 10px 10px;
+    overflow: hidden;
+    margin: 0 100px;
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+
+.news5 .text {
+    padding: 0 20px;
+    padding-top: 100px;
+    transition: all 0.5s;
+}
+
+.text {
+    padding: 0 20px;
+    padding-top: 100px;
+}
+
+.text1 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 70px;
+    padding-bottom: 5px;
+}
+
+.text2 {
+    text-align: right;
+}
+
+.news1 .text2 a,
+.news3 .text2 a,
+.news5 .text2 a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 2px 10px;
+    border: 2px solid #f7d7dc;
+    border-radius: 25px;
+    text-align: right;
+}
+
+.text2 a img {
+    padding-left: 60px;
+    padding-bottom: 5px;
+}
+
+.news1:hover .pink_gra {
+    transition-duration: 2s;
+    background-color: #ffb3c8;
+}
+
+.news1:hover .pink_gra .text {
+    padding-top: 70px;
+}
+
+
+.news3:hover .pink_gra {
+    transition-duration: 2s;
+    background-color: #ffb3c8;
+}
+
+.news3:hover .pink_gra .text {
+    padding-top: 70px;
+}
+
+
+.news5:hover .pink_gra {
+    transition-duration: 2s;
+    background-color: #ffb3c8;
+}
+
+.news5:hover .pink_gra .text {
+    padding-top: 70px;
+}
+
+
+/*news> green*/
+.green_gra {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,97a884+100&0.1+25,1+100 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(229, 233, 224, 0.1) 25%, rgba(151, 168, 132, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 266px;
+    height: 319px;
+    border-radius: 10px;
+}
+
+.news2 {
+    background: url(../image/news2.png) no-repeat;
+    width: 266px;
+    height: 319px;
+    border-radius: 130px 130px 10px 10px;
+    overflow: hidden;
+    margin: 0 100px;
+    margin-top: 110px;
+
+}
+
+.news2 .text {
+    padding: 0 20px;
+    padding-top: 120px;
+    transition: all 0.5s;
+}
+
+.news4 {
+    background: url(../image/news4.png) no-repeat;
+    width: 266px;
+    height: 319px;
+    border-radius: 130px 130px 10px 10px;
+    overflow: hidden;
+    margin-top: 110px;
+    z-index: 99;
+    position: relative;
+}
+
+.news4 .text {
+    padding: 0 20px;
+    padding-top: 120px;
+    transition: all 0.5s;
+}
+
+.news6 {
+    background: url(../image/news6.png) no-repeat;
+    width: 266px;
+    height: 319px;
+    border-radius: 130px 130px 10px 10px;
+    overflow: hidden;
+    margin-top: 110px;
+}
+
+.news6 .text {
+    padding: 0 20px;
+    padding-top: 100px;
+    transition: all 0.5s;
+}
+
+.news2 .text2 a,
+.news4 .text2 a,
+.news6 .text2 a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 2px 10px;
+    border: 2px solid #477b6d;
+    border-radius: 25px;
+
+}
+
+
+.news2:hover .green_gra {
+    transition-duration: 2s;
+    background-color: #97a884;
+}
+
+.news2:hover .green_gra .text {
+    padding-top: 70px;
+}
+
+
+
+.news4:hover .green_gra {
+    transition-duration: 2s;
+    background-color: #97a884;
+}
+
+.news4:hover .green_gra .text {
+    padding-top: 70px;
+}
+
+
+.news6:hover .green_gra {
+    transition-duration: 2s;
+    background-color: #97a884;
+}
+
+.news6:hover .green_gra .text {
+    padding-top: 70px;
+}
+
+/*news> cloud*/
+@keyframes move2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cloud1,
+.cloud3,
+.cloud5 {
+    animation: move2 3s linear 0.3s infinite;
+}
+
+.cloud2,
+.cloud4 {
+    animation: move2 5s linear infinite;
+}
+
+
+.title_cloud {
+    z-index: 99;
+    position: relative;
+}
+
+.cloud1 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -224px;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 300px;
+    right: 250px;
+}
+
+.cloud3 {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+}
+
+.cloud4 {
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+}
+
+.cloud5 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+/*shelter_story*/
+@keyframes img_ani {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.story_inner:hover {
+    animation-play-state: paused;
+}
+
+.story_txt {
+    width: 185px;
+    height: 120px;
+    padding: 0 46px;
+}
+
+#shelter_story {
+    text-align: center;
+    overflow: hidden;
+}
+
+.story_inner {
+    padding-top: 100px;
+    display: flex;
+    width: 7680px;
+    animation: img_ani 20s linear infinite;
+}
+
+.story {
+    padding: 0 50px;
+}
+
+.story h4 {
+    padding-bottom: 15px;
+}
+
+.hashtag {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.blue2 {
+    background-color: #acbfcd;
+    border-radius: 20px;
+    padding: 2px 7px;
+    margin-right: 3px;
+}
+
+.brown2 {
+    background-color: #e5b15d;
+    border-radius: 20px;
+    padding: 2px 7px;
+    margin-right: 3px;
+}
+
+.green2 {
+    background-color: #5a644e;
+    border-radius: 20px;
+    padding: 2px 7px;
+    margin-right: 3px;
+}
+
+.pink2 {
+    background-color: #ffb3c8;
+    border-radius: 20px;
+    padding: 2px 7px;
+    margin-right: 3px;
+}
+
+
+/*review*/
+#review img {
+    width: 519px;
+}
+
+.review_txt {
+    width: 519px;
+    height: 332px;
+    line-height: 27px;
+    padding: 0 50px;
+    background-color: #fff;
+    border: 7px solid #c2ceb7;
+    border-radius: 50px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.review_txt_in {
+    height: 200px;
+}
+
+#review {
+    padding-top: 200px;
+    overflow: hidden;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.review_inner {
+    max-width: 1820px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #e9cece, #ffb3c8);
+    border-radius: 50px;
+}
+
+#review>img {
+    position: absolute;
+    top: 70px;
+    right: -40px;
+    width: 558px;
+}
+
+/*변경 끝!*/
+
+.middle {
+    width: 1095px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#review h1 {
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 10px;
+    line-height: 100px;
+    padding: 40px 0;
+    padding-bottom: 30px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review_txt h2 {
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+/*봉사후기 슬라이드*/
+
+.review_next::after {
+    content: url(../icon/main_review_next.png);
+}
+
+.review_next {
+    right: -65px;
+}
+
+.review_prev::after {
+    content: url(../icon/main_review_next2.png);
+}
+
+.review_prev {
+    left: -65px;
+}
+
+.next_po {
+    position: relative;
+}
+
+.look_similar {
+    text-align: right;
+}
+
+.look_similar a {
+    background-color: #ffb3c8;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 7px 15px;
+    margin: 33px 3px 10px 0;
+    color: #fff;
+}
+
+
+/*best_product*/
+#best_product {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.all_look2 {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    background: url(../icon/round.png) no-repeat left center;
+    font-weight: 400;
+}
+
+.arrow {
+    position: absolute;
+    top: -5px;
+    right: -55px;
+}
+
+.all_look2 ul:hover .arrow {
+    animation: move1 1s 2;
+    transition-duration: 1s;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.all_look2 ul {
+    display: flex;
+}
+
+.all_look2 ul li {
+    padding: 20px 10px;
+}
+
+.best_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#best_product h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    position: relative;
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 10px;
+    line-height: 100px;
+}
+
+.star {
+    display: flex;
+    position: absolute;
+    top: -50px;
+    left: 600px;
+}
+
+.star li {
+    padding: 0 5px;
+}
+
+.hashtag_best span {
+    display: inline-block;
+    border: 3px solid #fed66e;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 5px;
+    padding-left: 0;
+}
+
+.hash_brown {
+    color: #e6bd7b;
+    padding-left: 7px;
+}
+
+.hash_green {
+    color: #5a644e;
+    padding-left: 5px;
+}
+
+.hash_pink {
+    color: #ffd5e1;
+    padding-left: 5px;
+}
+
+.hash_blue {
+    color: #bdcbd7;
+    padding-left: 5px;
+}
+
+.hash_red {
+    color: #cb2627;
+    padding-left: 5px;
+}
+
+.best p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    height: 30px;
+}
+
+.prize {
+    text-align: right;
+}
+
+.prize span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.best_txt {
+    height: 100px;
+}
+
+.best a img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.best a img {
+    transition-duration: 0.5s;
+}
+
+.best>a {
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 304px;
+}
+
+/*star*/
+/*
+@keyframes move3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    14.2% {
+        transform: translateY(-20px);
+    }
+
+    28.4% {
+        transform: translateY(0);
+    }
+
+    42.4% {
+        transform: rotate(-20deg);
+    }
+
+    56.6% {
+        transform: rotate(20deg);
+    }
+
+    70.8% {
+        transform: rotate(-20deg);
+    }
+
+    85% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+*/
+
+@keyframes move3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.star2 {
+    animation: move3 2s linear infinite;
+}
+
+.star1,
+.star3 {
+    animation: move3 3s linear infinite;
+}
+
+
+/*footer*/
+#footer {
+    background: url(../image/footer.png) no-repeat center bottom;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_inner>a>img {
+    padding-top: 250px;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu li {
+    padding: 30px 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer_inner p {
+    font-size: 18px;
+    padding: 3px 0;
+    line-height: 40px;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+}
+
+.sns li {
+    padding: 10px 3px;
+}
+
+
+
+/*up*/
+.up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+
+.up>img:hover {
+    transform: rotate(-60deg);
+    transition-duration: 1s;
+}
+
+.up>img {
+    transition-duration: 1s;
+}
+
+
+/* 스크롤바 전체 영역 */
+::-webkit-scrollbar {
+    width: 15px;
+    /* 세로축 스크롤바 폭 너비 */
+    height: 15px;
+    /* 가로축 스크롤바 폭 너비 */
+}
+
+/* 스크롤바 막대 */
+::-webkit-scrollbar-thumb {
+    background: #97a884;
+    /* 스크롤바 막대 색상 */
+    border: 2px solid #97a884;
+    /* 스크롤바 막대 테두리 설정  */
+    border-radius: 12px 12px 12px 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5a644e;
+}
+
+/* 스크롤이 움직이는 뒷 배경 */
+::-webkit-scrollbar-track {
+    background: #ecf2e674;
+    /* 스크롤바 뒷 배경 색상 */
+}

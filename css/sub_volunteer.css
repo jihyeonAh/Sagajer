@@ -1,0 +1,730 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    min-width: 1450px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111;
+    font-family: 'SUITE', sans-serif;
+}
+
+/* 
+font-family: 'SUITE', sans-serif;
+font-family: 'TAEBAEKmilkyway';
+ */
+
+
+/*header*/
+#header {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+}
+
+.gnb ul {
+    display: flex;
+    justify-content: center;
+}
+
+.gnb ul li {
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.login ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login ul li {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 15px;
+}
+
+.login ul li a {
+    color: #5a644e;
+}
+
+.search_input {
+    background: #5a644e url(../icon/search.png) no-repeat 95% center;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.search_input::placeholder {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+/*banner1*/
+#banner1 {
+    width: 1220px;
+    margin: 0 auto;
+    background: linear-gradient(-250deg, #e9cece, #ffb3c8);
+    border-radius: 40px;
+    padding: 70px;
+    position: relative;
+}
+
+.v_title {
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+}
+
+.v_sub_title {
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.check {
+    position: absolute;
+    top: 15px;
+    right: 46px;
+    z-index: 2;
+}
+
+.heart1 {
+    position: absolute;
+    top: 12px;
+    left: -49px;
+}
+
+.heart2 {
+    position: absolute;
+    top: -39px;
+    right: 235px;
+}
+
+.heart3 {
+    position: absolute;
+    top: 114px;
+    right: -19px;
+    z-index: 3;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.heart1,
+.heart3 {
+    animation: move1 2s linear 0.3s infinite;
+}
+
+.heart2 {
+    animation: move1 3s linear 0.3s infinite;
+}
+
+
+/*v_review*/
+#v_review_box {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 190px;
+}
+
+.title {
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 10px;
+    line-height: 100px;
+    padding: 60px 0;
+    padding-left: 100px;
+
+}
+
+
+.all_look {
+    position: absolute;
+    top: 145px;
+    right: 170px;
+    background: url(../icon/round.png) no-repeat left center;
+    font-weight: 400;
+
+}
+
+.arrow {
+    position: absolute;
+    top: -5px;
+    right: -50px;
+}
+
+.all_look ul:hover .arrow {
+    animation: move2 1s 2;
+    transition-duration: 1s;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.all_look ul {
+    display: flex;
+}
+
+.all_look ul li {
+    padding: 20px 10px;
+}
+
+.v_txt {
+    height: 80px;
+    width: 375px;
+}
+
+.v_txt>p:nth-child(1) {
+    padding: 20px 0;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.like_co {
+    display: flex;
+    justify-content: right;
+}
+
+.like_co li {
+    padding: 0 7px;
+    font-weight: bold;
+}
+
+.like_co li a {
+    padding: 0 4px;
+    margin-bottom: 5px;
+}
+
+.date {
+    text-align: right;
+    padding: 5px;
+    padding-bottom: 70px;
+}
+
+.v_review_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.v_review>a>img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.v_review>a>img {
+    transition-duration: 0.5s;
+}
+
+.like_co a img {
+    padding-left: 3px;
+    transition-duration: 0.5s;
+}
+
+.like_co a img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.v_review>a {
+    display: block;
+    overflow: hidden;
+    border-radius: 40px;
+    width: 375px;
+}
+
+.v_review {
+    position: relative;
+    margin: 0px 10px;
+}
+
+.po_txt {
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.po_txt2 {
+    position: absolute;
+    text-align: right;
+    top: 63px;
+    left: 155px;
+    color: #fff;
+    width: 200px;
+}
+
+.po_txt3 {
+    position: absolute;
+    top: 67px;
+    left: 27px;
+    color: #fff;
+}
+
+
+/*store*/
+#store_box {
+    background: url(../image/store_bg.png) no-repeat center top;
+    width: 100%;
+    /*이곳에 패딩 탑을 넣는 것이 맞는 지 모르겠음.*/
+
+}
+
+#store_box .store_box_inner h1 {
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 10px;
+    line-height: 130px;
+}
+
+.store_box_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.all_look2 {
+    position: absolute;
+    top: 125px;
+    right: 170px;
+    background: url(../icon/round.png) no-repeat left center;
+    font-weight: 400;
+
+}
+
+.arrow {
+    position: absolute;
+    top: -5px;
+    right: -50px;
+}
+
+.all_look2 ul:hover .arrow {
+    animation: move2 1s 2;
+    transition-duration: 1s;
+}
+
+.all_look2 ul {
+    display: flex;
+}
+
+.all_look2 ul li {
+    padding: 20px 10px;
+}
+
+#store {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.store_img {
+    padding-top: 40px;
+}
+
+.store_txt {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.store_txt p {
+    font-weight: 600;
+}
+
+.store_txt h2 {
+    padding-top: 15px;
+}
+
+.store_txt h2 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.store_img {
+    width: 251px;
+    height: 245px;
+    position: relative;
+    z-index: 2;
+}
+
+.shadow1 {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.shadow2 {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.shadow3 {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.shadow4 {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.store_img>a>img {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.product1 {
+    animation: move3 4s linear 0.3s infinite;
+}
+
+.product2 {
+    animation: move3 5.5s linear 0.3s infinite;
+}
+
+.product3 {
+    animation: move3 4s linear 0.3s infinite;
+}
+
+.product4 {
+    animation: move3 5.5s linear 0.3s infinite;
+}
+
+/*banner2*/
+#banner2 {
+    width: 1220px;
+    margin: 0 auto;
+    background: linear-gradient(150deg, #d2e4f1, #ebf3f8);
+    border-radius: 40px;
+    padding: 70px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+.s_title {
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: 800;
+    position: relative;
+}
+
+.s_sub_title {
+    font-size: 22px;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: -56px;
+    left: 46px;
+}
+
+
+/*store review*/
+#store_review {
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+#store_review h1 {
+    text-align: center;
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 10px;
+    line-height: 50px;
+    padding-bottom: 70px;
+}
+
+.store_review_inner {
+    display: flex;
+    justify-content: center;
+}
+
+/*슬라이드*/
+/*1. html swiper 겉에 position:relative를 넣어줄 박스를 만들어준다.(swiper에는 이미 position:absolute가 들어가 있음.)
+2. script의 navigation에 내가 설정한 방향키 클래스 이름으로 바꿔준다.
+3. 방향키 위치 설정하기.
+*/
+
+.s_review_next::after {
+    content: url(../icon/main_review_next.png);
+}
+
+.s_review_next {
+    right: -80px;
+}
+
+.store_review_inner {
+    position: relative;
+}
+
+.s_review_prev::after {
+    content: url(../icon/main_review_next2.png);
+}
+
+.s_review_prev {
+    left: -80px;
+}
+
+.next_po {
+    position: relative;
+}
+
+.s_review_prev {
+    color: #5a644e;
+}
+
+.s_review_pag span {
+    background-color: #97a884;
+}
+
+.s_review {
+    padding-bottom: 70px;
+}
+
+/*슬라이드 꾸미기 끝*/
+.swiper-slide>a>img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.swiper-slide>a>img {
+    transition-duration: 0.5s;
+}
+
+.swiper-slide>a {
+    display: block;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    width: 218px;
+}
+
+.s_review_txt {
+    background-color: #acbfcd;
+    width: 218px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 7px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.gray_name {
+    color: #eee;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+
+}
+
+.s_review_like {
+    background-color: #f5eadf;
+    border-radius: 0 0 20px 20px;
+    width: 218px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.s_review_like p span {
+    font-size: 15px;
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+.s_review_like>img {
+    position: absolute;
+    bottom: 12px;
+    left: 11px;
+}
+
+
+
+/*footer*/
+#footer {
+    background: url(../image/footer.png) no-repeat center bottom;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_inner>a>img {
+    padding-top: 250px;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu li {
+    padding: 30px 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer_inner p {
+    font-size: 18px;
+    padding: 3px 0;
+    line-height: 40px;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+}
+
+.sns li {
+    padding: 10px 3px;
+}
+
+
+/*up*/
+.up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+
+.up>img:hover {
+    transform: rotate(-60deg);
+    transition-duration: 1s;
+}
+
+.up>img {
+    transition-duration: 1s;
+}
+
+
+
+/* 스크롤바 전체 영역 */
+::-webkit-scrollbar {
+    width: 15px;
+    /* 세로축 스크롤바 폭 너비 */
+    height: 15px;
+    /* 가로축 스크롤바 폭 너비 */
+}
+
+/* 스크롤바 막대 */
+::-webkit-scrollbar-thumb {
+    background: #97a884;
+    /* 스크롤바 막대 색상 */
+    border: 2px solid #97a884;
+    /* 스크롤바 막대 테두리 설정  */
+    border-radius: 12px 12px 12px 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5a644e;
+}
+
+/* 스크롤이 움직이는 뒷 배경 */
+::-webkit-scrollbar-track {
+    background: #ecf2e674;
+    /* 스크롤바 뒷 배경 색상 */
+}
