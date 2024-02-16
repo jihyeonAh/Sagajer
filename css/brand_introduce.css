@@ -115,7 +115,7 @@ font-family: 'TAEBAEKmilkyway';
 
 .bg1_txt {
     width: 660px;
-    padding: 200px 50px;
+    padding: 150px 50px;
     padding-left: 680px;
     position: relative;
 }
@@ -136,7 +136,7 @@ font-family: 'TAEBAEKmilkyway';
 .title {
     background: url(../image/title_bg.png) no-repeat left center;
     padding-top: 25px;
-    padding-bottom: 17px;
+    padding-bottom: 30px;
     padding-left: 14px;
     font-size: 25px;
 }
