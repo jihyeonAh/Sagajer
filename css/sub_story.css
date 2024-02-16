@@ -692,17 +692,16 @@ font-family: 'TAEBAEKmilkyway';
     letter-spacing: 10px;
     line-height: 50px;
     padding-left: 110px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .interview_txt {
     display: flex;
     width: 500px;
+    padding-bottom: 50px;
 }
 
 .interview_txt>p {
-
-
     font-size: 19px;
     padding-top: 30px;
     padding-right: 15px;
@@ -724,13 +723,11 @@ font-family: 'TAEBAEKmilkyway';
 .interview_video {
     border-radius: 15px;
     overflow: hidden;
-    width: 550px;
-    height: 310px;
 }
 
 .interview h2 {
     position: absolute;
-    bottom: 17px;
+    bottom: 70px;
     left: 25px;
 }
 
