@@ -521,9 +521,10 @@ font-family: 'TAEBAEKmilkyway';
     margin-right: 7px;
 }
 
-.brown2 a {
+.brown2 span {
     color: #fff;
-    font-weight: bold
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .pink2 {
@@ -536,9 +537,10 @@ font-family: 'TAEBAEKmilkyway';
     margin-right: 7px;
 }
 
-.pink2 a {
+.pink2 span {
     color: #fff;
-    font-weight: bold
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .blue2 {
@@ -550,9 +552,10 @@ font-family: 'TAEBAEKmilkyway';
     padding-top: 5px;
 }
 
-.blue2 a {
+.blue2 span {
     color: #fff;
-    font-weight: bold
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #tab1 ul li {
@@ -775,6 +778,7 @@ font-family: 'TAEBAEKmilkyway';
 .sns li {
     padding: 10px 3px;
 }
+
 
 
 /*up*/

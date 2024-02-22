@@ -515,6 +515,7 @@ div#birth2.on1 {
     top: -54px;
     left: 440px;
     animation: move3 15s linear infinite;
+    z-index: 5;
 }
 
 .plus1 {
