@@ -128,12 +128,15 @@ font-family: 'TAEBAEKmilkyway';
 
 /*shelter_story*/
 #shelter_story {
-    width: 1620px;
-    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 200px;
     background: url(../image/shelter_txt_back.png) no-repeat 43% 40%;
 
+}
+
+.shelter_story_inner {
+    width: 1320px;
+    margin: 0 auto;
 }
 
 #shelter_story h1 {
@@ -147,7 +150,7 @@ font-family: 'TAEBAEKmilkyway';
 .story,
 .story2 {
     display: flex;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .story_txt {
@@ -163,7 +166,7 @@ font-family: 'TAEBAEKmilkyway';
 }
 
 .story2>img {
-    padding-left: 200px;
+    padding-left: 80px;
 }
 
 
@@ -329,36 +332,35 @@ font-family: 'TAEBAEKmilkyway';
 .deco1 {
     position: absolute;
     top: 150px;
-    right: 200px;
+    right: 20px;
     animation: move1 2s linear infinite;
 }
 
 .deco2 {
     position: absolute;
     top: 105px;
-    left: 730px;
+    left: 500px;
     animation: move2 3s linear infinite;
 }
 
 .deco3 {
     position: absolute;
     top: 170px;
-    right: 360px;
+    right: 170px;
     animation: move3 3s linear infinite;
 }
-
 
 .deco4 {
     position: absolute;
     top: 55px;
-    left: 580px;
+    left: 350px;
     animation: move1 3.5s linear infinite;
 }
 
 .deco5 {
     position: absolute;
     top: 130px;
-    right: 450px;
+    right: 250px;
     animation: move4 2.5s linear infinite;
 }
 
